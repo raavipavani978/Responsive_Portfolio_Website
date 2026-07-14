@@ -1,0 +1,202 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f8f9fa;
+    color:#333;
+}
+
+/* Navbar */
+
+.navbar{
+    transition:0.3s;
+}
+
+.navbar-brand{
+    font-size:1.6rem;
+    letter-spacing:1px;
+}
+
+.nav-link{
+    margin-left:20px;
+    font-weight:500;
+    transition:.3s;
+}
+
+.nav-link:hover{
+    color:#0d6efd !important;
+}
+
+/* Hero */
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    padding-top:90px;
+}
+
+.profile-img{
+    width:320px;
+    height:320px;
+    object-fit:cover;
+    border:8px solid white;
+}
+
+/* Sections */
+
+section{
+    padding:90px 0;
+}
+
+h2{
+    font-weight:700;
+}
+
+/* Cards */
+
+.card{
+    border:none;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 10px 25px rgba(0,0,0,.2);
+}
+.card-img-top{
+    width:100%;
+    height:250px;
+    object-fit:contain;
+    background-color:#f8f9fa;
+}
+/* Skills Icons */
+
+.bi{
+    transition:.3s;
+}
+
+.card:hover .bi{
+    transform:scale(1.2);
+}
+
+/* Bootstrap Purple */
+
+.text-purple{
+    color:#7952b3;
+}
+
+/* Buttons */
+
+.btn{
+    border-radius:30px;
+    padding:12px 30px;
+}
+
+/* Contact */
+
+form input,
+form textarea{
+    border-radius:12px;
+}
+
+form input:focus,
+form textarea:focus{
+    box-shadow:none;
+    border-color:#0d6efd;
+}
+
+/* Social Icons */
+
+#contact a{
+    color:#333;
+    transition:.3s;
+}
+
+#contact a:hover{
+    color:#0d6efd;
+}
+
+/* Footer */
+
+footer{
+    font-size:15px;
+}
+
+/* Responsive */
+
+@media(max-width:992px){
+
+.hero{
+    text-align:center;
+}
+
+.profile-img{
+    width:260px;
+    height:260px;
+    margin-top:30px;
+}
+
+}
+
+@media(max-width:768px){
+
+.nav-link{
+    margin-left:0;
+    text-align:center;
+}
+
+.hero h1{
+    font-size:2.4rem;
+}
+
+.hero h3{
+    font-size:1.4rem;
+}
+
+.profile-img{
+    width:220px;
+    height:220px;
+}
+
+section{
+    padding:70px 0;
+}
+
+}
+
+@media(max-width:576px){
+
+.hero h1{
+    font-size:2rem;
+}
+
+.hero h3{
+    font-size:1.2rem;
+}
+
+.hero p{
+    font-size:15px;
+}
+
+.profile-img{
+    width:180px;
+    height:180px;
+}
+
+.btn{
+    width:100%;
+}
+
+}
